@@ -95,6 +95,10 @@ app.get('/hello', function (req, res) {
   res.send('hello world 1');
 });
 
+app.get('/hej', function (req, res) {
+  res.send('hello world 2');
+});
+
 // error handling
 app.use(function(err, req, res, next){
   console.error(err.stack);
